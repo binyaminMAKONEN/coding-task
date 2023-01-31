@@ -11,7 +11,7 @@ const Lobby = () => {
 
     const getCodes = async () => {
         try {
-          const res = await axios.get("http://localhost:8080/api/code");
+          const res = await axios.get("https://relieved-crab-wetsuit.cyclic.app/api/code");
           setCodeBlocks(res.data);
           myStorage.setItem("codes", JSON.stringify(res.data))
           setError(false)
