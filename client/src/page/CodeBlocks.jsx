@@ -5,7 +5,7 @@ import MentorDashboard from "../components/MentorDashboard";
 import StudentDashboard from "../components/StudentDashboard";
 import io from "socket.io-client"
 // const socket = io.connect("http://localhost:3008")
-const socket = io.connect("wss://fluttering-supreme-oval.glitch.me")
+const socket = io.connect("wss://fluttering-supreme-oval.glitch.me/")
 
 
 const CodeBlocks = () => {
