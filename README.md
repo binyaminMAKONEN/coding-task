@@ -53,11 +53,10 @@ The server side is built with Node.js and Express, and includes two models for u
 ## Socket.io Server
 The socket.io server connects the client side, enabling real-time updates on the website.
 
+## Screenshots
+![codeTask](https://user-images.githubusercontent.com/101037019/215886183-577402de-4289-4593-b0b1-f3eeef3e6947.png)
+
 ## Conclusion
 this project is a full-stack application that connects the client side, server side, and socket.io server to enable real-time updates on the website. The client side is built with React and Tailwind, and the server side is built with Node.js and Express.
 
-## Screenshots
 
-
-
-![codeTask](https://user-images.githubusercontent.com/101037019/215886183-577402de-4289-4593-b0b1-f3eeef3e6947.png)
