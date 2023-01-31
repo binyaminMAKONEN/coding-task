@@ -9,7 +9,7 @@ const server = http.createServer(app)
 app.use(cors())
 const io = new Server(server,{
   cors:{
-    origin: 'https://coding-task-kappa.vercel.app/',
+    origin: 'https://coding-task-kappa.vercel.app',
     methods: 'GET, POST, PUT, DELETE',
   }
 })

@@ -12,6 +12,7 @@ const connect =require('./db/connection')
 
 app.use(require('./routes/route'))
 
+
 connect.then(db =>{
     if(!db)return process.exit(1)
     app.listen(port, () => {
