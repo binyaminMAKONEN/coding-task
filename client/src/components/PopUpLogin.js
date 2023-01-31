@@ -21,7 +21,7 @@ function PopUpLogin({ setPopup, popup }) {
     };
 
     try {
-      await axios.post("http://localhost:8080/api/register", newUser);
+      await axios.post("https://relieved-crab-wetsuit.cyclic.app/api/register", newUser);
       setError(false);
       setSuccess(true);
     } catch (err) {
@@ -35,7 +35,7 @@ function PopUpLogin({ setPopup, popup }) {
       password: passwordLogRef.current.value,
     };
     try {
-      const res = await axios.post("http://localhost:8080/api/login", user);
+      const res = await axios.post("https://relieved-crab-wetsuit.cyclic.app/api/login", user);
       myStorage.setItem("user", JSON.stringify(res.data))
       window.location.reload(false)
       setPopup(!popup);

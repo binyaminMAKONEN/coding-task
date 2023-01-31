@@ -4,7 +4,7 @@ import Editor from "@monaco-editor/react";
 import MentorDashboard from "../components/MentorDashboard";
 import StudentDashboard from "../components/StudentDashboard";
 import io from "socket.io-client"
-const socket = io.connect("http://localhost:3002")
+const socket = io.connect("http://localhost:3008")
 
 
 const CodeBlocks = () => {
@@ -40,7 +40,7 @@ const CodeBlocks = () => {
       setValue(data)
       
     })
-  },[]);
+  },[socket]);
   return (
     <div className="relative w-full flex flex-col items-center py-10 ">
       <h1 className="mb-5">{codeBlock.title}</h1>

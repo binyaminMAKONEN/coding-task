@@ -26,7 +26,7 @@ const MentorDashboard = ({ codeBlock }) => {
     };
 
     try {
-      await axios.post("http://localhost:8080/api/code", newCodeBlock);
+      await axios.post("https://relieved-crab-wetsuit.cyclic.app/api/code", newCodeBlock);
       setError(false);
       setSuccess(true);
     } catch (err) {
@@ -35,7 +35,7 @@ const MentorDashboard = ({ codeBlock }) => {
   };
 //Delete code block
   const deleteCodeBlock = async () => {
-    await axios.delete(`http://localhost:8080/api/code/${codeBlock._id}`);
+    await axios.delete(`https://relieved-crab-wetsuit.cyclic.app/api/code/${codeBlock._id}`);
     navigate("/");
   };
   return (

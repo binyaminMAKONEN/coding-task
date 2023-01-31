@@ -9,7 +9,7 @@ const server = http.createServer(app)
 app.use(cors())
 const io = new Server(server,{
   cors:{
-    origin: 'http://localhost:3003',
+    origin: 'https://coding-task-kappa.vercel.app/',
     methods: 'GET, POST, PUT, DELETE',
   }
 })
@@ -21,6 +21,6 @@ io.on("connection",(socket)=>{
   })
 
 })
-server.listen(3002, ()=>{
+server.listen(3008, ()=>{
   console.log('Server is Running');
 })
