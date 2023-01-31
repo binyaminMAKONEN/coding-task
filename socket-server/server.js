@@ -3,14 +3,14 @@ const cors  = require('cors')
 const app = express();
 const http = require('http')
 const {Server}= require('socket.io')
-const server = http.createServer(app)
 
 
 app.use(cors())
+const server = http.createServer(app)
 const io = new Server(server,{
   cors:{
-    origin: 'https://coding-task-kappa.vercel.app',
-    methods: 'GET, POST, PUT, DELETE',
+    origin: 'https://http://localhost:3000',
+    methods:[ 'GET, POST, PUT, DELETE']
   }
 })
 io.on("connection",(socket)=>{
@@ -21,6 +21,6 @@ io.on("connection",(socket)=>{
   })
 
 })
-server.listen(3008, ()=>{
+server.listen(3001, ()=>{
   console.log('Server is Running');
 })
