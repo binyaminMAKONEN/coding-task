@@ -9,6 +9,7 @@ const Nav = () => {
     const userIsConnect = myStorage.getItem("user")
     const handleLogout = () => {
       navigate('/')
+      window.location.reload(false)
       myStorage.removeItem("user");
     };
 
