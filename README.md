@@ -18,7 +18,6 @@ This is a full-stack web application for tracking personal expenses. It allows u
   - codeBlocks
 ### Server Side
 - Node.js and Express
-- Components folder:
 ###  Socket.io Server
 - Connects the client side 
 - Enables real-time updates on the website
